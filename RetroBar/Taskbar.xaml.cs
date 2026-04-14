@@ -499,13 +499,8 @@ namespace RetroBar
 
         private void UpdateStartButton()
         {
-            if (!Screen.Primary && !Settings.Instance.ShowStartButtonMultiMon)
-            {
-                StartButton.Visibility = Visibility.Collapsed;
-                return;
-            }
-
-            StartButton.Visibility = Visibility.Visible;
+            StartButton.Visibility = Visibility.Collapsed;
+            return;
         }
 
         private bool HasFullScreenApp()
